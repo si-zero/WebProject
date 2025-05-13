@@ -1,8 +1,8 @@
 # 웹프로젝트 홈페이지 (CC)
 > **개발 기간** : 2025. 05. 12. ~  
 > **개발 인원** : 유시영, 윤준진  
-> **예시 화면** : https://www.figma.com/design/zpGbRGnvD6DoOUJquI4WiD/Webprogramming?node-id=2-4&m=dev&t=pQqgZtFdI1L7CGUX-1 참조    
-   
+> **예시 화면** : https://www.figma.com/design/zpGbRGnvD6DoOUJquI4WiD/Webprogramming?node-id=2-4&m=dev&t=pQqgZtFdI1L7CGUX-1 참조       
+              
    
 ## 📌 개요
 > 사용자들의 상품을 올려 온라인에서 거래할 수 있는 사이트

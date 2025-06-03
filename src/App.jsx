@@ -1,13 +1,13 @@
 import './App.css'
 import Header from './components/Header'
-import Product_List from './components/Product_List'
+import SearchBar from './components/SearchBar'
 
 function App() {
 
   return (
     <>
       <Header/>
-      <Product_List/>
+      <SearchBar/>
     </>
   )
 }

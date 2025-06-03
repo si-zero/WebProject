@@ -1,20 +1,16 @@
-import "./Header.css";
-import { useEffect, useState } from "react";
-function Header() {
-  const [dateVar, setDateVar] = useState(new Date().toLocaleString());
-  useEffect(() => {
-    const intervalVar = setInterval(() => {
-      setDateVar(new Date().toLocaleString());
-    }, 1000);
-    return () => {
-      clearInterval(intervalVar);
-    };
-  }, []);
+import React from 'react';
+import './Header.css';
+
+const Header = () => {
   return (
-    <div className="Header">
-      <h3> 오늘은 🗓️ </h3>
-      <h1> {dateVar} </h1>
-    </div>
+    <header className="header">
+      <div className="logo">Pixen</div>
+      <div className="header-icons">
+        <button className="icon">🛒</button>
+        <button className="icon">☰</button>
+      </div>
+    </header>
   );
-}
+};
+
 export default Header;

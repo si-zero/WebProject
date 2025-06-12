@@ -17,7 +17,7 @@ const EventBannerList = () => {
     },
     {
       id: 3,
-      title: '신상품 입고!',
+      title: '신상품 입고',
       description: '지금 바로 확인하세요.',
       image: 'src/assets/EventBanner_3.png',
     }

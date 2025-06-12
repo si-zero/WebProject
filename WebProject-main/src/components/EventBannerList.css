@@ -1,0 +1,11 @@
+.event-banner-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 0rem;
+}
+.event-banner-card {
+  min-width: 300px;
+  flex-shrink: 0;
+}

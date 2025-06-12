@@ -1,0 +1,106 @@
+{
+  "events": [
+    {
+      "imageUrl": "src/images/event.png",
+      "title": "매주 다양한 도트 리소스",
+      "description": "다양한 상품 보기",
+      "backgroundColor": "#aaccff"
+    },
+        {
+      "imageUrl": "src/images/event2.png",
+      "title": "색깔별 리소스",
+      "description": "다양한 상품 보기",
+      "backgroundColor": "#aaccff"
+    },
+        {
+      "imageUrl": "src/images/event3.png",
+      "title": "주문제작",
+      "description": "다양한 상품 보기",
+      "backgroundColor": "#aaccff"
+    },
+        {
+      "imageUrl": "src/images/event2.png",
+      "title": "색깔별 리소스",
+      "description": "다양한 상품 보기",
+      "backgroundColor": "#aaccff"
+    },
+        {
+      "imageUrl": "src/images/event3.png",
+      "title": "주문제작",
+      "description": "다양한 상품 보기",
+      "backgroundColor": "#aaccff"
+    }
+  ],
+  "products": [
+    {
+      "imageUrl": "src/images/default.png",
+      "category": "스크립트",
+      "name": "상점 스크립트",
+      "description": "마인크래프트 페이지 상점 스크립트",
+      "price": 10000
+    },
+        {
+      "imageUrl": "src/images/default.png",
+      "category": "스크립트",
+      "name": "상점 스크립트",
+      "description": "마인크래프트 페이지 상점 스크립트",
+      "price": 20000
+    },
+        {
+      "imageUrl": "src/images/default.png",
+      "category": "스크립트",
+      "name": "상점 스크립트",
+      "description": "마인크래프트 페이지 상점 스크립트",
+      "price": 30000
+    },
+        {
+      "imageUrl": "src/images/default.png",
+      "category": "스크립트",
+      "name": "상점 스크립트",
+      "description": "마인크래프트 페이지 상점 스크립트",
+      "price": 40000
+    },
+    {
+    "imageUrl": "src/images/default.png",
+      "category": "스크립트",
+      "name": "상점 스크립트",
+      "description": "마인크래프트 페이지 상점 스크립트",
+      "price": 50000
+    },
+        {
+      "imageUrl": "src/images/default.png",
+      "category": "스크립트",
+      "name": "상점 스크립트",
+      "description": "마인크래프트 페이지 상점 스크립트",
+      "price": 60000
+    },
+        {
+      "imageUrl": "src/images/default.png",
+      "category": "스크립트",
+      "name": "상점 스크립트",
+      "description": "마인크래프트 페이지 상점 스크립트",
+      "price": 70000
+    },
+        {
+      "imageUrl": "src/images/default.png",
+      "category": "스크립트",
+      "name": "상점 스크립트",
+      "description": "마인크래프트 페이지 상점 스크립트",
+      "price": 80000
+    },
+    {
+    "imageUrl": "src/images/default.png",
+      "category": "스크립트",
+      "name": "상점 스크립트",
+      "description": "마인크래프트 페이지 상점 스크립트",
+      "price": 90000
+    },
+        {
+      "imageUrl": "src/images/default.png",
+      "category": "스크립트",
+      "name": "상점 스크립트",
+      "description": "마인크래프트 페이지 상점 스크립트",
+      "price": 100000
+    }
+  ]
+}

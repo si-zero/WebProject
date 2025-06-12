@@ -1,0 +1,6 @@
+.logo {
+  background-image: url('../assets/main_logo.png');
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+}

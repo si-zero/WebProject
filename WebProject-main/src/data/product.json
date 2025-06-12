@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "name": "상점 스크립트",
+        "price": 5000,
+        "image": "/images/shop.jpg"
+    },
+    {
+        "id": 2,
+        "name": "주식 스크립트",
+        "price": 10000,
+        "image": "/images/stock.jpg"
+    }
+]

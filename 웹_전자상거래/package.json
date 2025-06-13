@@ -1,0 +1,19 @@
+{
+  "name": "fullstack-project",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "// dev": "🚀 서버와 클라이언트를 동시에 자동 재시작하며 실행(데이터 변동 시 서버 재시작)",
+    "dev": "concurrently \"nodemon server/server.js\" \"npm run dev --prefix client\"",
+
+    "// dev2": "서버를 node로 실행하고 클라이언트는 dev로 실행(데이터 변경 시 서버 재시작 X)",
+    "dev2": "concurrently \"node server/server.js\" \"npm run dev --prefix client\"",
+
+    "// install-all": "📦 모든 디렉토리(client/server)의 npm install",
+    "i": "npm install && npm install --prefix client && npm install --prefix server"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.0.1"
+  }
+}

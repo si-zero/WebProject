@@ -1,0 +1,14 @@
+#root {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* App.css */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 3rem;          
+  padding: 2rem;
+}

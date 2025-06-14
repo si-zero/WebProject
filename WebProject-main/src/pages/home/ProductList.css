@@ -1,0 +1,15 @@
+.product-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 0rem;
+  width: 100%;
+  padding-bottom: 1rem;
+  text-align: left;
+}
+
+.product-card {
+  min-width: 288px;
+  flex-shrink: 0;
+}

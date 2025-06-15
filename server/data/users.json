@@ -1,0 +1,32 @@
+[
+    {
+        "id": "u1",
+        "name": "유월",
+        "introduction": "안녕하세요",
+        "likes_product": ["p1","p2"],
+        "role": "admin",
+        "products": [],
+        "email": "snm306@naver.com",
+        "password": "youwol0611"
+    },
+    {
+        "id": "u2",
+        "name": "시월",
+        "introduction": "안녕하세요",
+        "likes_product": ["p1"],
+        "role": "seller",
+        "products": [],
+        "email": "a",
+        "password": "a"
+    },
+    {
+        "id": "u3",
+        "name": "일반인",
+        "introduction": "안녕하세요",
+        "likes_product": [],
+        "role": "user",
+        "products": [],
+        "email": "b",
+        "password": "b"
+    }
+]

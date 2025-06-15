@@ -1,0 +1,14 @@
+.search-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.search-input {
+  width: 90%;
+  padding: 0.6rem 1rem;
+  border-radius: 999px;
+  border: 2px solid #fcd34d; /* 노란색 */
+  font-size: 1rem;
+  outline: none;
+}

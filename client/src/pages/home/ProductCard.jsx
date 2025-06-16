@@ -1,9 +1,9 @@
 import './ProductCard.css'
 
-const ProductCard = ({product}) => {
+const ProductCard = ({product, onClick}) => {
     return (
         <>
-            <div className='product-card'>
+            <div className='product-card' onClick={onClick}>
                 <div className='top-box'>
                     <img src={product.image} alt={product.title} className='product-image'/>
                     <img src='/heart_deativation.png' className='product-heart'/>

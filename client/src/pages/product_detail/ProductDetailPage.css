@@ -1,0 +1,150 @@
+@font-face {
+  font-family: 'DNFBitBitv2';
+  src: url('/fonts/DNFBitBitv2.woff2') format('woff2');
+}
+
+/* 전체 페이지 컨테이너 */
+.product-detail-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 32px 16px;
+  font-family: 'DNFBitBitv2', sans-serif;
+}
+
+/* 상품 이름 */
+.product-name {
+  font-weight: bold;
+  margin-bottom: 10px; /* 이미지와 간격 10px */
+}
+
+/* ProductDetailPage에서만 적용 */
+.product-detail-page .product-name {
+  font-size: 30px;
+  margin-bottom: 10px; /* 이미지와 간격 */
+}
+
+/* 메인 영역 레이아웃 */
+.product-main-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin-top: 10px; /* 상품 이름과 메인 영역 간격 */
+}
+
+/* 이미지 갤러리 */
+.product-image-gallery {
+  flex: 2;
+  min-width: 300px;
+  /* max-width 제거하여 너비 제한 없음 */
+}
+
+/* 대표 이미지 */
+.main-image {
+  width: 500px;    /* 가로 고정 */
+  height: 350px;   /* 세로 고정 */
+  object-fit: cover; /* 비율 유지하며 꽉 채우기 */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 썸네일 목록 */
+.thumbnail-list {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+/* 썸네일 개별 이미지 */
+.thumbnail {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: border 0.3s ease;
+}
+
+.thumbnail:hover {
+  border-color: #aaa;
+}
+
+.thumbnail.active {
+  border-color: #0078ff;
+}
+
+/* 구매 영역 */
+.product-purchase-section {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.product-price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.add-to-cart-button {
+  padding: 14px;
+  background-color: #0078ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-to-cart-button:hover {
+  background-color: #005ecb;
+}
+
+/* 설명 영역 */
+.product-description-section {
+  margin-top: 48px;
+}
+
+.product-description-section h3 {
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+}
+
+.product-description-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  white-space: pre-line;
+}
+
+/* 연관 상품 영역 */
+.related-products-section {
+  margin-top: 48px;
+}
+
+.related-products-section h3 {
+  font-size: 1.25rem;
+  margin-bottom: 16px;
+}
+
+.related-products-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.related-placeholder {
+  width: 180px;
+  height: 240px;
+  background-color: #ffffff; /* 하얀 배경 */
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000; /* 검정 텍스트 */
+  font-weight: 700;
+}

@@ -1,0 +1,101 @@
+/* 위시리스트 페이지 전체 컨테이너 */
+/* 최대 너비 1000px, 가로 중앙 정렬, 내부 여백 20px */
+.wishlist-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* 위시리스트 제목 스타일 */
+/* 글자 크기 24px, 아래 여백 20px, 굵은 글씨 */
+.wishlist-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* 위시리스트 항목들을 세로로 나열 */
+/* flex column, 아이템 간 간격 15px */
+.wishlist-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* 각 위시리스트 항목 스타일 */
+/* 가로 배치 flex, 배경 어두운 네이비 계열, 테두리, 둥근 모서리, 내부 여백, 항목 세로 가운데 정렬, 텍스트 연한 회색 */
+.wishlist-item {
+  display: flex;
+  background-color: #1b2838;
+  border: 1px solid #2a475e;
+  border-radius: 5px;
+  padding: 10px;
+  align-items: center;
+  color: #c7d5e0;
+}
+
+/* 항목 내 이미지 스타일 */
+/* 고정 너비 120px, 높이는 자동 비율 유지, 이미지 영역에 맞춰 자르기(object-fit: cover),
+   오른쪽 여백, 둥근 모서리 */
+.wishlist-image {
+  width: 120px;
+  height: auto;
+  object-fit: cover;
+  margin-right: 15px;
+  border-radius: 3px;
+}
+
+/* 이미지 오른쪽 정보 컨테이너 */
+/* 가로 남은 공간 모두 차지 */
+.wishlist-info {
+  flex: 1;
+}
+
+/* 상품명 스타일 */
+/* 마진 제거, 글자 크기 18px, 연한 파란색 */
+.wishlist-info h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #66c0f4;
+}
+
+/* 상품 설명 스타일 */
+/* 위쪽 마진 5px, 글자 크기 14px, 연한 회색 */
+.wishlist-description {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #a9a9a9;
+}
+
+/* 위시리스트 액션 버튼 컨테이너 */
+/* 세로 방향 flex, 오른쪽 정렬, 버튼 간 간격 8px */
+.wishlist-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+/* 가격 텍스트 스타일 */
+/* 글자 크기 16px, 굵게 */
+.wishlist-price {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* 액션 버튼 스타일 */
+/* 녹색 배경, 흰색 텍스트, 테두리 없음, 내부 여백, 둥근 모서리, 포인터 커서, 배경색 전환 애니메이션 */
+.wishlist-button {
+  background-color: #5c7e10;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+/* 버튼 호버 시 배경색 밝게 변경 */
+.wishlist-button:hover {
+  background-color: #77a319;
+}

@@ -1,0 +1,168 @@
+/* 전체 컨테이너 */
+/* 페이지의 전체 내용 영역을 감싸며, 최대 너비 지정 및 중앙 정렬, 폰트 설정 */
+.product-detail-container {
+  padding: 24px;
+  max-width: 1000px;
+  margin: auto;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 메인 영역 */
+/* 이미지 갤러리와 구매 관련 영역을 가로 배치하며, 공간 부족 시 자동 줄바꿈, 간격 조절 */
+.product-main-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+/* 이미지 갤러리 */
+/* 이미지 갤러리 영역 너비 조절 및 최소 너비 지정 */
+.product-image-gallery {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* 메인 이미지 */
+/* 가로 100% 채우고, 최대 높이 지정, 비율 유지하며 내부 여백 없이 표시, 테두리와 둥근 모서리 적용 */
+.main-image {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: contain;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+/* 썸네일 리스트 */
+/* 썸네일 이미지들을 가로로 나열, 간격 유지, 공간 부족 시 줄바꿈 */
+.thumbnail-list {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+/* 썸네일 이미지 */
+/* 작은 크기 고정, 이미지 비율 유지하며 채우기, 클릭 커서 표시, 기본 테두리는 투명, 둥근 모서리 */
+.thumbnail {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 4px;
+}
+
+/* 활성화된 썸네일 */
+/* 현재 선택된 썸네일에 테두리 색상 적용 */
+.thumbnail.active {
+  border-color: #888;
+}
+
+/* 구매 관련 영역 */
+/* 구매 관련 버튼과 정보들을 세로로 배치, 최소 너비 설정, 내부 요소 간 간격 */
+.product-purchase-section {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* 가격 텍스트 */
+/* 가격을 크게, 굵게, 진한 색상으로 표시 */
+.product-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #222;
+}
+
+/* 찜하기, 바로 구매하기, 취소 버튼 공통 스타일 */
+/* 패딩, 폰트 크기, 둥근 모서리, 커서 포인터, 테두리와 배경색, 부드러운 배경 전환 효과 */
+.add-to-wishlist-button,
+.buy-now-button,
+.cancel-button {
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  transition: background 0.2s ease;
+}
+
+/* 찜하기 버튼 호버 효과 */
+/* 연한 분홍색 배경으로 색상 변화 */
+.add-to-wishlist-button:hover {
+  background-color: #fbeff5;
+}
+
+/* 바로 구매 버튼 기본 스타일 */
+/* 파란 배경, 흰색 글자, 테두리 없음 */
+.buy-now-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+/* 바로 구매 버튼 호버 효과 */
+/* 어두운 파란색으로 배경 색상 변화 */
+.buy-now-button:hover {
+  background-color: #0056b3;
+}
+
+/* 취소 버튼 기본 스타일 */
+/* 밝은 회색 배경 */
+.cancel-button {
+  background-color: #f8f8f8;
+}
+
+/* 취소 버튼 호버 효과 */
+/* 약간 더 진한 회색으로 배경 변화 */
+.cancel-button:hover {
+  background-color: #eee;
+}
+
+/* 상품 설명 영역 */
+/* 상품 설명 영역 아래쪽 여백 확보 */
+.product-description-section {
+  margin-bottom: 32px;
+}
+
+/* 상품 설명 제목 */
+/* 크고 아래쪽 여백 확보 */
+.product-description-section h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+/* 상품 설명 본문 */
+/* 읽기 편한 글자 크기와 줄 간격, 줄바꿈 유지, 진한 회색 텍스트 */
+.product-description-section p {
+  font-size: 16px;
+  line-height: 1.6;
+  white-space: pre-line;
+  color: #333;
+}
+
+/* 연관 상품 영역 */
+/* 연관 상품 영역 아래쪽 여백 확보 */
+.related-products-section {
+  margin-bottom: 32px;
+}
+
+/* 연관 상품 제목 */
+/* 크고 아래쪽 여백 확보 */
+.related-products-section h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+/* 연관 상품 그리드 */
+/* 연관 상품들을 가로 배치하며 간격 유지, 공간 부족 시 줄바꿈 */
+.related-products-grid {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}

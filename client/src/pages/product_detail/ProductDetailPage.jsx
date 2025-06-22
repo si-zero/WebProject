@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import "./ProductDetailPage.css";
-import Header from "../../components/Header";
 import ProductCard from "../home/ProductCard";
+import './ProductDetailPage.css'
 
 const ProductDetailPage = () => {
   const location = useLocation();

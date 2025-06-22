@@ -1,7 +1,9 @@
 import './Login.css';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Login = ( { onClose } ) => {
+    const navigate = useNavigate();
     const [form, setForm] = useState({email: '', password: ''});
 
     const handleChange = (e) => {
@@ -35,6 +37,10 @@ const Login = ( { onClose } ) => {
             console.error('로그인 요청 중 에러 발생:', error);
             alert('서버 오류: 로그인 실패');
         }
+    };
+
+    const goToRegister = () => {
+        navigate('/register');
     };
 
     return (
@@ -71,7 +77,7 @@ const Login = ( { onClose } ) => {
                         </div>
                         <div className='register-box'>
                             <p className='find'>아직 회원이 아니신가요?</p>
-                            <p className='register-font'>회원가입 하기</p>
+                            <p className='register-font' onClick={goToRegister}>회원가입 하기</p>
                         </div>
                     </div>
                     

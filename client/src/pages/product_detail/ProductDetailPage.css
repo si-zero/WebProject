@@ -1,15 +1,11 @@
-@font-face {
-  font-family: 'DNFBitBitv2';
-  src: url('/fonts/DNFBitBitv2.woff2') format('woff2');
-}
-
 /* 전체 페이지 컨테이너 */
 .product-detail-container {
-  width: 100%;
-  max-width: 1440px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 32px 16px;
-  font-family: 'DNFBitBitv2', sans-serif;
+  font-family: 'Noto Sans KR', sans-serif; 
+  background-color: #ffffff; /* 하얀 배경 */
+  color: #222222; /* 검정 텍스트 (가독성 위해) */
 }
 
 /* 상품 이름 */

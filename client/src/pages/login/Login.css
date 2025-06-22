@@ -27,14 +27,14 @@
   height: 142px;
   left: 50%;
   transform: translateX(-50%);
-  top: 13px;
+  top: 53px;
 }
 
 /* 아이디 영역 */
 
 .login {
   position: absolute;
-  top: 143px;
+  top: 183px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -43,7 +43,7 @@
 
 .password {
   position: absolute;
-  top: 197px;
+  top: 237px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -90,6 +90,9 @@ input {
   border-radius: 5px;
   font-size: 10px;
   line-height: 11px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
 }
 
 .register-font {
@@ -101,7 +104,7 @@ input {
 
 .login-area {
   position: absolute;
-  top: 255px;
+  top: 280px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;

@@ -24,7 +24,8 @@ const Login = ( { onClose } ) => {
             body: JSON.stringify({
                 email: form.email,
                 password: form.password
-            })
+            }),
+            credentials: 'include'
             });
 
             const result = await response.json();

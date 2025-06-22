@@ -1,9 +1,12 @@
 import './Login.css';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useUser } from '../../context/UserContext';
 
 const Login = ( { onClose } ) => {
     const navigate = useNavigate();
+    const { setUser } = useUser();
+    
     const [form, setForm] = useState({email: '', password: ''});
 
     const handleChange = (e) => {
@@ -28,6 +31,8 @@ const Login = ( { onClose } ) => {
 
             if (response.ok && result.success) {
             alert('로그인 성공!');
+                setUser(result.user);
+                navigate('/');
             // 여기서 result.user 정보를 상태에 저장하거나 메인으로 이동
             } else {
             alert(result.message || '로그인 실패');
@@ -56,7 +61,7 @@ const Login = ( { onClose } ) => {
                     </div>
                     <div className='password'>
                         <p className='password-text'>비밀번호</p>
-                        <input className='password-context' name='password' onChange={handleChange}></input>
+                        <input type='password' className='password-context' name='password' onChange={handleChange}></input>
                     </div>
                     <div className='login-area'>
                         <div className='login-options'>

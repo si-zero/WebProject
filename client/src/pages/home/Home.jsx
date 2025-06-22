@@ -11,7 +11,8 @@ const Home = () => {
     return (
         <>
             <div className="app-container">
-                <Header onMyInfoClick={() => setShowLoginModal(true)}/>
+                <Header 
+                    onMyInfoClick={() => setShowLoginModal(true)}/>
                 {showLoginModal && <LoginModal onClose={() => setShowLoginModal(false)} />}
                 <SearchBar />
                 <EventBannerList />

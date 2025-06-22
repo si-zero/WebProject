@@ -1,12 +1,19 @@
 import React from 'react';
 import './Header.css';
 import { useNavigate } from 'react-router-dom';
+import { UserProvider } from '../context/UserContext';
+import { useUser } from '../context/UserContext';
 
 const Header = () => {
   const navigate = useNavigate();
+  const { user } = useUser();
 
   const handleMyInfoClick = () => {
-    navigate('/login');
+    if (user) {
+      navigate('/myInfo');
+    } else {
+      navigate('/login');
+    }
   };
 
   return (
